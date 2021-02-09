@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login with JS validations</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div id='container_menu'>
+        <h1>Login screen</h1>
+        <form id='form_register'> <!-- First part form-->
+            <div class='auto_register_box'> <!-- Full BOX Line-->
+                <label for='email'>E-mail</label>
+                <input type="email" name='email' id='email' placeholder="E-mail" data-min-length='3' data-required data-email-validate>
+            </div>
+            <div class='half_register_box spacing'>
+                <label for='name'>Name</label>
+                <input type='text' name='name' id='name' placeholder='Name' data-max-length='16' data-only-letters>
+            </div>
+            <div class='half_register_box'>
+                <label for='lastname'>Lastname</label>
+                <input type='text' name='lastname' id='lastname' placeholder='Lastname'>
+            </div>
+            <div class='half_register_box spacing'>
+                <label for='password'>Password</label>
+                <input type='password' name='password' id='password' placeholder='Password' data-required data-password-validate>
+            </div>
+            <div class='half_register_box'>
+                <label for='confirmpassword'>Confirm Password</label>
+                <input type='password' name='confirmpassword' id='confirmpassword' placeholder='Confirm Password' data-equal='password'>
+            </div>
+            <div class='auto_register_box'>
+                <input type='checkbox' name='checkbox_register' id='checkbox_register'>
+                <label for='checkbox_register' id='checkbox_register-label'>I have read and accept the <a href='#'>terms of use</a></label> 
+            </div>
+            <div class='auto_register_box'>
+                <input type="submit" id='bottom_submit' value='REGISTER'>
+            </div>
+
+        </form>
+
+    </div>
+    <p class="error-validation template"></p>
+    <script src='JS/script.js'></script>
+</body>
+</html>

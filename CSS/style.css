@@ -1,0 +1,126 @@
+/* OVERALL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+    color: #323232;
+    border: none;
+}
+
+body {
+    padding-top: 5vh; /* Usado para dar espaço tanto em PC e MOBILE, ou seja, 5% da tela*/
+    background-image: url('../img/wallpaper.jpeg');
+    /*background-size: cover;*/ 
+}
+
+input, label {
+    width: 100%;
+    display:block;
+}
+
+input:focus, label:focus {
+    outline: none;
+}
+
+label {
+    font-weight: bold;
+    font-size: 0.8rem; 
+}
+
+input {
+    border-bottom: 1.8px solid #323232 ;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+input:focus {
+    border-color:orangered;
+}
+
+a {
+    color:chocolate;
+}
+
+/* REGISTER */
+
+#container_menu {
+    width: 500px;
+    margin-left: 12%;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+#container_menu h1 {
+    margin-bottom: 25px;
+    font-size: 1.8rem; /* 1.8 x o elemento ROOT */
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.auto_register_box {
+    flex: 1 1 100%;
+    position: relative;
+    /*background-color:aqua;*/
+}
+
+.half_register_box {
+    flex: 1 1 45%;
+    position: relative;
+    /*background-color: orangered;*/
+}
+
+.spacing {
+    margin-right: 3%;
+}
+
+input[type='submit'] {
+    background-color: #CA3E00;
+    border-radius: 10px;
+    border: none;
+    cursor:pointer;
+    height: 50px;
+    font-weight: bold;
+    color:white;
+}
+
+#checkbox_register {
+    margin-right: 5px;
+}
+
+#checkbox_register, #checkbox_register-label {
+    display: inline-block;
+    width: auto;
+}
+
+/* VALIDATION */
+
+.error {
+    color:#FF1A1A;
+    position:absolute;
+    top: 60px;
+    font-size: .8rem;
+}
+
+.template {
+    display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
