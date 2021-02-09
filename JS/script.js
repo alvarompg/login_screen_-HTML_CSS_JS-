@@ -206,8 +206,3 @@ submit.addEventListener('click', function(e) {
     validation.validate(form);
 
 });
-
-
-
-
- 
